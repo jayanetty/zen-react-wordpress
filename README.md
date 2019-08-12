@@ -2,18 +2,14 @@
 This is a framework that enables the connection between React and WordPress swiftly.
 
 ## Motivation
-
+Zen: React + WordPress is a minimal framework focuses on speeding up the WordPress blogs by integrating with React. Developers can transform the existing blog to React seamlessly at a less cost and time
 
 ## Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. - 
 
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/2cmqa4cafxl3p8r7?svg=true)](https://ci.appveyor.com/project/rushjayz/zen-react-wordpress)
 
-## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) 
+## Code documentation
+![js-standard-style](http://inch-ci.org/github/rushjayz/zen-react-wordpress.svg?branch=master)
 
 ## Tech/framework used
 
@@ -78,4 +74,4 @@ const wordPressUrl = "http://dev.zen-react-wp.com/wp-json/wp/v2/";
 
 ## License
 
-MIT © [Rashain Jayanetty](rashainjayanetty.com)
+MIT © [Rashain Jayanetty](https://github.com/rushjayz)
