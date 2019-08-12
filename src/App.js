@@ -10,6 +10,7 @@ import Contact from "./components/contact";
 import { Route } from "react-router-dom";
 import { GlobalStyles } from "./components/theme";
 
+// The core of the application. All the Routable components should be added inside the App() with exact paths
 function App() {
   return (
     <div className="App">

@@ -12,18 +12,20 @@ class BlogDetails extends Component {
       posts: []
     };
   }
-
+  /* componentDidMount() is used to load data from the defined Url through REST API in this case */
   componentDidMount() {
     const postUrl = `${projectsUrl}${this.props.match.params.slug}`;
     fetch(postUrl)
       .then(data => data.json())
       .then(data => {
+        /* Retrieved data is set to posts as an object to call upon request under rendering */
         this.setState({
           posts: data
         });
       });
   }
 
+  /* The data is retrieved from the state.posts and rendered. .map will expand the array object */
   render() {
     let listposts = this.state.posts.map((post, index) => {
       return (

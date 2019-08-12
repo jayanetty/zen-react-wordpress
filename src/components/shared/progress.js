@@ -9,6 +9,7 @@ class Progress extends Component {
     };
   }
 
+  /* Rendering the setup progress. Not in use atm!!! */
   render() {
     return (
       <ProgressWrapper>

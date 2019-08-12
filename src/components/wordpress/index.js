@@ -14,15 +14,21 @@ class WordPress extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  /* Input value will be set to state with every change */
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
 
+  /* With the submit function the entered URL will be retrieved and shown in an alert */
   handleSubmit(event) {
     alert("Carry on with: " + this.state.value);
     event.preventDefault();
   }
 
+  /*
+  The Form is rendered here. There is no API involvement here.
+  TODO: Entered Url to update the backend Url
+  */
   render() {
     return (
       <Container>

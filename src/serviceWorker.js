@@ -20,6 +20,7 @@ const isLocalhost = Boolean(
     )
 );
 
+/* When the service worker is registered*/
 export function register(config) {
   if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
     // The URL constructor is available in all browsers that support SW.
@@ -54,10 +55,20 @@ export function register(config) {
   }
 }
 
+/*
+  The onupdatefound property of the ServiceWorkerRegistration interface is an EventListener property called
+  whenever an event of type statechange is fired; it is fired any time the registerValidSW. swUrl is the site Url
+  config will pass the parameters
+*/
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+      /*
+      The onupdatefound property of the ServiceWorkerRegistration interface is an EventListener property called
+      whenever an event of type statechange is fired; it is fired any time the ServiceWorkerRegistration.installing
+      property acquires a new service worker.
+      */
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
@@ -124,6 +135,7 @@ function checkValidServiceWorker(swUrl, config) {
     });
 }
 
+/* Function if service workers are not registered. */
 export function unregister() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.ready.then(registration => {
